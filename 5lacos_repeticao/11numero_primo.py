@@ -11,11 +11,9 @@ num = int(input("Descubra se um número é primo: \n"))
 
 primo = True
 acm = (num // 2)#esta opção retorna o valor do quociente
-
 for i in range(acm, 0, -1):
     if num % i == 0 and i != 1:
         primo = False
-
 if primo:
     print("O número {} é primo.".format(num))
 else:
